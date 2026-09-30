@@ -13,7 +13,7 @@ dependencies {
 }
 
 application {
-
+	mainClass.set("hexlet.code.App")
 }
 
 
