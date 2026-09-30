@@ -1,11 +1,9 @@
-# Ignore Gradle project-specific cache directory
 .gradle/
-
-# Ignore Gradle build output directory
 build/
-
-# Ignore Kotlin plugin data
 .kotlin
 .git/
 .settings/
-
+.project
+.gitattributes
+bin/
+.classpath
