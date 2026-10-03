@@ -1,30 +1,38 @@
 # Игры разума (Java)
 
 [![hexlet-check](https://github.com/blackAdmln/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/blackAdmln/java-project-61/actions)
+## Showcases
+### Greeting
 
-Погрузитесь в экосистему Java, научитесь настраивать рабочее окружение. Подружитесь с Spotless (линтером и форматтером кода) и фреймворком для автоматизации сборки проектов Gradle. Поймёте, чем git отличается от GitHub, поработаете с внешними репозиториями. Получите опыт построения архитектуры полноценного приложения и написания чистого кода.
+![Greeting](src/main/resources/greeting.gif)
 
-Учебный проект Хекслета: https://ru.hexlet.io/programs/java
-Как это должно работать: https://asciinema.org/a/gNnJBjpEYJublKT1LuzK4Ep9h
+### Even
 
-## Стек
+![Even](src/main/resources/even.gif)
 
-- Java
-
-## Установка
-
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
+## Start
 
 ```bash
-git clone https://github.com/blackAdmln/java-project-61.git
-cd java-project-61
+make
 ```
 
-## Использование
+## Setup && run
 
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+```bash
+make run
+```
 
----
+## Run linter
+
+```bash
+make lint_check
+```
+
+## Check update dependencies and plugins
+
+```bash
+make dep_update
+```
 
 <details>
 <summary>Автоматические тесты Хекслета</summary>
@@ -33,6 +41,3 @@ cd java-project-61
 
 </details>
 
-## О Хекслете
-
-[Хекслет](https://ru.hexlet.io/) — школа программирования: авторские программы обучения с практикой, поддержкой наставников и реальными проектами, которые остаются в резюме. Этот репозиторий — один из таких проектов.

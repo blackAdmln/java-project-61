@@ -1,6 +1,9 @@
 .DEFAULT_GOAL := run-dist
 
-run: clean lint_check lint_apply build install run-dist
+run: dep_update clean lint_check lint_apply build install run-dist
+
+dep_update:
+	./gradlew dependencyUpdates
 
 clean:
 	./gradlew clean
