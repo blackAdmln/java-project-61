@@ -4,27 +4,27 @@
 ## Showcases
 ### Greeting
 
-![Greeting](src/main/resources/greet.gif)
+![Greeting](app/src/main/resources/greet.gif)
 
 ### Even
 
-![Even](src/main/resources/even.gif)
+![Even](app/src/main/resources/even.gif)
 
 ### Calculator
 
-![Calculator](src/main/resources/calc.gif)
+![Calculator](app/src/main/resources/calc.gif)
 
 ### GCD
 
-![GCD](src/main/resources/gcd.gif)
+![GCD](app/src/main/resources/gcd.gif)
 
 ### Progression
 
-![Progression](src/main/resources/progression.gif)
+![Progression](app/src/main/resources/progression.gif)
 
 ### Prime
 
-![Prime](src/main/resources/prime.gif)
+![Prime](app/src/main/resources/prime.gif)
 
 
 ## Start
