@@ -18,6 +18,11 @@
 
 ![GCD](src/main/resources/gcd.gif)
 
+### Progression
+
+![Progression](src/main/resources/progression.gif)
+
+
 ## Start
 
 ```bash

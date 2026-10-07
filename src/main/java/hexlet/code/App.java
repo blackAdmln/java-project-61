@@ -4,6 +4,7 @@ import hexlet.code.games.Calc;
 import hexlet.code.games.Cli;
 import hexlet.code.games.Even;
 import hexlet.code.games.Gcd;
+import hexlet.code.games.Progression;
 import java.util.Scanner;
 
 class App {
@@ -39,6 +40,7 @@ class App {
                 Gcd.gameGCD();
                 break;
             case 5:
+                Progression.gameProgression();
                 break;
             case 6:
                 break;
