@@ -4,7 +4,7 @@
 ## Showcases
 ### Greeting
 
-![Greeting](src/main/resources/greeting.gif)
+![Greeting](src/main/resources/greet.gif)
 
 ### Even
 
