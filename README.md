@@ -10,6 +10,10 @@
 
 ![Even](src/main/resources/even.gif)
 
+### Calculator
+
+![Calculator](src/main/resources/calc.gif)
+
 ## Start
 
 ```bash
