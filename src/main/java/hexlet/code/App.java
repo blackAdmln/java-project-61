@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.games.Calc;
 import hexlet.code.games.Cli;
 import hexlet.code.games.Even;
+import hexlet.code.games.Gcd;
 import java.util.Scanner;
 
 class App {
@@ -35,6 +36,7 @@ class App {
                 Calc.gameCalc();
                 break;
             case 4:
+                Gcd.gameGCD();
                 break;
             case 5:
                 break;

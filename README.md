@@ -14,6 +14,10 @@
 
 ![Calculator](src/main/resources/calc.gif)
 
+### GCD
+
+![GCD](src/main/resources/gcd.gif)
+
 ## Start
 
 ```bash
