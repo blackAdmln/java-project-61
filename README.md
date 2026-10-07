@@ -22,6 +22,10 @@
 
 ![Progression](src/main/resources/progression.gif)
 
+### Prime
+
+![Prime](src/main/resources/prime.gif)
+
 
 ## Start
 

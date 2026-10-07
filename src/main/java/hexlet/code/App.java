@@ -4,6 +4,7 @@ import hexlet.code.games.Calc;
 import hexlet.code.games.Cli;
 import hexlet.code.games.Even;
 import hexlet.code.games.Gcd;
+import hexlet.code.games.Prime;
 import hexlet.code.games.Progression;
 import java.util.Scanner;
 
@@ -43,6 +44,7 @@ class App {
                 Progression.gameProgression();
                 break;
             case 6:
+                Prime.gamePrime();
                 break;
             default:
                 mainScanner.close();
