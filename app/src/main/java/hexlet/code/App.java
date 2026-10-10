@@ -29,7 +29,7 @@ class App {
                 mainScanner.close();
                 break;
             case 1:
-                Cli.getName();
+                Cli.greet();
                 break;
             case 2:
                 Even.gameEven();
