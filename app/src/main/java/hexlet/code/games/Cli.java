@@ -1,13 +1,17 @@
 package hexlet.code.games;
 
-import hexlet.code.Engine;
 import java.util.Scanner;
 
 public class Cli {
-    public static String getName() {
-        Scanner scanner = new Scanner(System.in);
-        Engine answer = new Engine(scanner);
 
-        return answer.greeting();
-    }
+	public static void greet() {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Welcome to the Brain Games!");
+		System.out.print("May I have your name? ");
+		String userName = scanner.next();
+		System.out.println("Hello, " + userName + "!");
+
+		scanner.close();
+	}
 }
