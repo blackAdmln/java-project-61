@@ -4,31 +4,33 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Prime {
-    public static void gamePrime() {
-        Engine construct = new Engine();
-        Random random = new Random();
+	public static boolean isPrime(int number) {
+		if (number < 2) {
+			return false;
+		} else {
+			for (int j = 2; j <= Math.sqrt(number); j++) {
+				if (number % j == 0) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
 
-        String[][] sameNumber = new String[3][2];
+	public static void gamePrime() {
+		Engine construct = new Engine();
+		Random random = new Random();
 
-        var requirement = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+		String[][] sameNumber = new String[3][2];
 
-        for (int i = 0; i < 3; i++) {
-            boolean primeNumber = true;
-            sameNumber[i][0] = Integer.toString(random.nextInt(1, 1000));
-            int refNumber = Integer.parseInt(sameNumber[i][0]);
+		var requirement = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
-            if (refNumber < 2) {
-                primeNumber = false;
-            } else {
-                for (int j = 2; j <= Math.sqrt(refNumber); j++) {
-                    if (refNumber % j == 0) {
-                        primeNumber = false;
-                        break;
-                    }
-                }
-            }
-            sameNumber[i][1] = primeNumber ? "yes" : "no";
-        }
-        construct.logic(requirement, sameNumber);
-    }
+		for (int i = 0; i < 3; i++) {
+			int number = random.nextInt(1, 1000);
+
+			sameNumber[i][0] = Integer.toString(number);
+			sameNumber[i][1] = Prime.isPrime(number) ? "yes" : "no";
+		}
+		construct.logic(requirement, sameNumber);
+	}
 }
