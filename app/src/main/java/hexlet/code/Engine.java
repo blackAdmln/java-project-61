@@ -6,7 +6,7 @@ public class Engine {
 
     public Engine() {}
 
-    public void logic(String requirement, String[][] question) {
+    public static void logic(String requirement, String[][] question) {
         Scanner answer = new Scanner(System.in);
 
         System.out.println("Welcome to the Brain Games!");

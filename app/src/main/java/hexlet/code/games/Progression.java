@@ -17,11 +17,8 @@ public class Progression {
     }
 
     public static void gameProgression() {
-        Engine construct = new Engine();
         Random random = new Random();
-
         String[][] sameNumbers = new String[3][2];
-
         var requirement = "What number is missing in the progression?";
 
         for (int i = 0; i < 3; i++) {
@@ -45,6 +42,6 @@ public class Progression {
             sameNumbers[i][1] = String.valueOf(progression[randomIndex]);
         }
 
-        construct.logic(requirement, sameNumbers);
+        Engine.logic(requirement, sameNumbers);
     }
 }

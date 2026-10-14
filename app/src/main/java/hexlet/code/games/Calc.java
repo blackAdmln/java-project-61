@@ -34,10 +34,8 @@ public class Calc {
 
     public static void gameCalc() {
         Random random = new Random();
-        Engine construct = new Engine();
-
-        var requirement = "What is the result of the expression?";
         String[][] sameNumbers = new String[3][2];
+        var requirement = "What is the result of the expression?";
 
         for (int i = 0; i < 3; i++) {
             int operand1 = random.nextInt(1, 100);
@@ -47,6 +45,6 @@ public class Calc {
             sameNumbers[i][0] = operand1 + " " + operator + " " + operand2;
             sameNumbers[i][1] = Integer.toString(Calc.calculation(operand1, operand2, operator));
         }
-        construct.logic(requirement, sameNumbers);
+        Engine.logic(requirement, sameNumbers);
     }
 }
