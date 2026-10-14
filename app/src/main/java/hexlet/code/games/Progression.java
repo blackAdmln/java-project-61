@@ -5,20 +5,15 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Progression {
-    public static int[] getProgression() {
-        Random random = new Random();
-
-        int start = random.nextInt(1, 9);
-        int step = random.nextInt(1, 9);
-        int[] array = new int[random.nextInt(5, 15)];
+    public static String[] getProgression(int start, int step, int length) {
         int counter = 0;
+        String[] progression = new String[length];
 
-        while (counter < array.length) {
-            array[counter] = start + counter * step;
+        while (counter < progression.length) {
+            progression[counter] = String.valueOf(start + counter * step);
             counter++;
         }
-
-        return array;
+        return progression;
     }
 
     public static void gameProgression() {
@@ -30,21 +25,24 @@ public class Progression {
         var requirement = "What number is missing in the progression?";
 
         for (int i = 0; i < 3; i++) {
-            var array = Progression.getProgression();
+            int start = random.nextInt(1, 9);
+            int step = random.nextInt(1, 9);
+            int length = random.nextInt(5, 15);
 
-            var result = new String[array.length];
-            var randomIndex = random.nextInt(0, array.length);
+            String[] progression = Progression.getProgression(start, step, length);
 
-            for (int j = 0; j < array.length; j++) {
-                result[j] = String.valueOf(array[j]);
+            var result = new String[progression.length];
+            var randomIndex = random.nextInt(0, progression.length);
+
+            for (int j = 0; j < progression.length; j++) {
+                result[j] = progression[j];
                 if (j == randomIndex) {
                     result[j] = "..";
                 }
             }
             sameNumbers[i][0] =
                     Arrays.deepToString(result).replace("[", "").replace("]", "").replace(",", "");
-            ;
-            sameNumbers[i][1] = String.valueOf(array[randomIndex]);
+            sameNumbers[i][1] = String.valueOf(progression[randomIndex]);
         }
 
         construct.logic(requirement, sameNumbers);
