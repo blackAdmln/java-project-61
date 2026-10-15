@@ -1,7 +1,6 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import java.util.Arrays;
 import java.util.Random;
 
 public class Progression {
@@ -26,20 +25,13 @@ public class Progression {
             int step = random.nextInt(1, 9);
             int length = random.nextInt(5, 15);
 
-            String[] progression = Progression.getProgression(start, step, length);
+            var progression = Progression.getProgression(start, step, length);
+            var randomNumber = progression[random.nextInt(0, progression.length)];
 
-            var result = new String[progression.length];
-            var randomIndex = random.nextInt(0, progression.length);
+            var question = String.join(" ", progression);
 
-            for (int j = 0; j < progression.length; j++) {
-                result[j] = progression[j];
-                if (j == randomIndex) {
-                    result[j] = "..";
-                }
-            }
-            sameNumbers[i][0] =
-                    Arrays.deepToString(result).replace("[", "").replace("]", "").replace(",", "");
-            sameNumbers[i][1] = String.valueOf(progression[randomIndex]);
+            sameNumbers[i][0] = question.replace(randomNumber, "..");
+            sameNumbers[i][1] = randomNumber;
         }
 
         Engine.logic(requirement, sameNumbers);
