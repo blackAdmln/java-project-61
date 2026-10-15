@@ -4,10 +4,10 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Even {
-    public static String checkEven(int number) {
-        if (number % 2 == 0) return "yes";
+    public static boolean isEven(int number) {
+        if (number % 2 == 0) return true;
 
-        return "no";
+        return false;
     }
 
     public static void gameEven() {
@@ -18,7 +18,7 @@ public class Even {
         for (int i = 0; i < 3; i++) {
             int number = random.nextInt(1, 9999);
             sameNumber[i][0] = Integer.toString(number);
-            sameNumber[i][1] = Even.checkEven(number);
+            sameNumber[i][1] = Even.isEven(number) ? "yes" : "no";
         }
 
         Engine.logic(requirement, sameNumber);
