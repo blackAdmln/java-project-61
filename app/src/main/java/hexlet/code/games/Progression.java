@@ -26,11 +26,15 @@ public class Progression {
             int length = random.nextInt(5, 15);
 
             var progression = Progression.getProgression(start, step, length);
-            var randomNumber = progression[random.nextInt(0, progression.length)];
+
+            var randomIndex = random.nextInt(0, progression.length);
+            var randomNumber = progression[randomIndex];
+
+            progression[randomIndex] = "..";
 
             var question = String.join(" ", progression);
 
-            sameNumbers[i][0] = question.replace(randomNumber, "..");
+            sameNumbers[i][0] = question;
             sameNumbers[i][1] = randomNumber;
         }
 
