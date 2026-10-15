@@ -48,7 +48,7 @@ class App {
                 break;
             default:
                 mainScanner.close();
-                break;
+                throw new Error("Unknown game choice: " + choice);
         }
     }
 }
